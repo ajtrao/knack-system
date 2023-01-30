@@ -1,9 +1,6 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-  background-color: #FDF6EA !important;
   background-color: black !important;
 }
 
@@ -45,9 +42,9 @@ body {
   flex-shrink: none;
 }
 
-.custom{
-    flex: 1 0 auto;
-    background-color: lightgrey;
-    font:700;
-    text-align :center
+.custom {
+  height: 100%;
+  background-color: black !important;
+  color:red 
+
 }

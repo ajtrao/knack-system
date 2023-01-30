@@ -1,9 +1,19 @@
-<h1>New employer</h1>
-
-<%= render "form", employer: @employer %>
-
-<br>
-
-<div>
-  <%= link_to "Back to employers", employers_path %>
+<div class="container text-center mt-4 p-3 mb-2 bg-light text-dark text-info">
+  <div class="row justify-content-md-center">
+      <div class="col-10 mt-5">
+        <h1 class="text">Create new employer</h1>
+        <hr>
+        <%= render "form", employer: @employer %>
+        <hr>
+        <div>
+          <%= link_to "Back to employers", employers_path %>
+        </div>
+      </div>
+  </div>
 </div>
+
+
+
+
+
+

@@ -1,12 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @employer %>
 
+<div class="container mt-5 p-3 mb-2 bg-light text-dark text-info">
+  <div class="row justify-content-md-center">
+    <div class="col-10">
+      <div class="card">
+        <div class="card-header text-center">
+         Kanck employee
+        </div>
+        <div class="card-body text-center" >
+          <p class="card-text"><%= render @employer %></p>
+          <%= link_to "Edit", edit_employer_path(@employer), class:"btn btn-primary" %> |
+          <%= link_to "Destroy", @employer, method: :delete, data:{ confirm: "Are you sure want to delete" },class:"btn btn-danger" %>
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+       <%= link_to "Back to employee page", employers_path %>
+      </div>
 
-
-<div>
-  <%= link_to "Edit this employer", edit_employer_path(@employer) %> |
-  <%= link_to "Back to employers", employers_path %>
-
-  <%= button_to "Destroy this employer", @employer, method: :delete %>
+    </div>
+  </div>
 </div>
+

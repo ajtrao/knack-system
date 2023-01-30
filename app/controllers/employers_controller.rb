@@ -3,11 +3,12 @@ class EmployersController < ApplicationController
 
   # GET /employers or /employers.json
   def index
-    @employers = Employer.all
+    @employers = Employer.search(params[:search])
   end
 
   # GET /employers/1 or /employers/1.json
   def show
+    @employers = Employer.all
   end
 
   # GET /employers/new
