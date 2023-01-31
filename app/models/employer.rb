@@ -1,4 +1,5 @@
 class Employer < ApplicationRecord
+    belongs_to :user, class_name: "User"
     def self.search(search)
         if search
             where(["name LIKE ?","%#{search}%"])
