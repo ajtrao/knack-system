@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "application#home"
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
